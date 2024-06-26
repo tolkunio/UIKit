@@ -1,0 +1,55 @@
+@mixin counter {
+  all: unset;
+  cursor: pointer;
+  text-align: center;
+  padding: 2px 7.5px;
+
+  width: 24px;
+  height: 24px;
+
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+.primary {
+  @include counter;
+  color: #FFFFFF;
+  background-color: #2FB675;
+}
+
+.secondary {
+  @include counter;
+  color: #2E2F33;
+  background-color: rgba(#836656, 0.12);
+}
+
+//8
+.xs {
+
+}
+
+//12
+.s {
+
+}
+
+//16
+.m {
+
+}
+
+//20
+.l {
+
+}
+
+//24
+.xl {
+
+}
