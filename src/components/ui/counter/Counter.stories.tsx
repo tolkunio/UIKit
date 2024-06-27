@@ -1,6 +1,6 @@
 import type {Meta} from '@storybook/react'
-import Counter from "./Counter";
 import {StoryObj} from "@storybook/react";
+import {Counter} from "./Counter";
 
 const meta: Meta<typeof Counter> = {
     component: Counter,
@@ -16,18 +16,18 @@ export default meta
 type Story = StoryObj<typeof meta>
 export const Default = {
     args: {
-        children:'1'
+        quantity:'1'
     },
 }
 export const Primary: Story = {
     args: {
-        children: '1',
+        quantity: '1',
         variant: 'primary',
     },
 }
 export const Secondary: Story = {
     args: {
-        children: '1',
+        quantity: '1',
         variant: 'secondary',
     },
 }

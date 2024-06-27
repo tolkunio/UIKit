@@ -1,17 +1,11 @@
 @mixin counter {
+  display: block;
   all: unset;
   cursor: pointer;
   text-align: center;
-  padding: 2px 7.5px;
 
-  width: 24px;
-  height: 24px;
-
-  color: #FFFFFF;
   border-radius: 50%;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 500;
+
   background-color: transparent;
   border: none;
   transition: all 0.4s ease 0s;
@@ -28,28 +22,53 @@
   color: #2E2F33;
   background-color: rgba(#836656, 0.12);
 }
-
+.stroke {
+  border: 2px solid var(--green-color);
+}
 //8
 .xs {
-
+  width: .8rem;
+  height: .8rem;
+  display: block;
+  color: transparent;
 }
 
 //12
 .s {
-
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+  color: transparent;
 }
+
 
 //16
 .m {
-
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0 .4rem;
 }
 
 //20
 .l {
-
+  width: 2rem;
+  height: 2rem;
+  line-height: 1.6rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0 .4rem;
 }
 
 //24
 .xl {
-
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0 .6rem;
 }
