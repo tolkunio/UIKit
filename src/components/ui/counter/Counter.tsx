@@ -17,10 +17,7 @@ export type CounterProps<T extends ElementType = 'div'> = {
 export const Counter = <T extends ElementType = 'div'>(props: CounterProps<T>) => {
     const {as: Component = 'div', className, variant = 'primary', size = 'm', quantity, stroke, ...rest} = props
     const formattedQuantity = getQuantity(quantity);
-    const classNames = clsx(s[variant], getSizeClassName(size), stroke && s.stroke,
-            className
-        )
-    ;
+    const classNames = clsx(s[variant], getSizeClassName(size), stroke && s.stroke, className);
     return (
         <Component className={classNames} {...rest}>
             {formattedQuantity}

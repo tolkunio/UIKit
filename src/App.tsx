@@ -1,10 +1,12 @@
 import s from './App.module.scss'
 import {Counter} from "./components/ui";
-
+import {Button} from "./components/ui";
+import btnStyle from './components/ui/button/Button.module.scss';
 function App() {
     return (
         <div className={s.app}>
-            <Counter variant={'primary'} size={'xl'} quantity={1} stroke={true}/>
+            <Button variant={'primary'} buttonSize={'m'}>Что сделать
+                <Counter className={btnStyle.counter} quantity={3}  variant={'primary'} size={'m'}/></Button>
         </div>
     );
 }
