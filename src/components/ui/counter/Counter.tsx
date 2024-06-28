@@ -6,7 +6,7 @@ export type CounterSize = 'xs' | 's' | 'm' | 'l' | 'xl'
 
 export type CounterProps<T extends ElementType = 'div'> = {
     as?: T,
-    quantity: string | number; //строка длиной 1,2 или 3 символа,либо число
+    quantity: string | number;
     className?: string,
     variant: 'primary' | 'secondary',
     size: CounterSize,
@@ -15,9 +15,9 @@ export type CounterProps<T extends ElementType = 'div'> = {
 
 }
 export const Counter = <T extends ElementType = 'div'>(props: CounterProps<T>) => {
-    const {as: Component = 'div', className, variant = 'primary', size = 'm', quantity, stroke, ...rest} = props
+    const {as: Component = 'div', className, variant = 'primary', size = 'm', quantity, stroke, pulse, ...rest} = props
     const formattedQuantity = getQuantity(quantity);
-    const classNames = clsx(s[variant], getSizeClassName(size), stroke && s.stroke, className);
+    const classNames = clsx(s[variant], getSizeClassName(size), stroke && s.stroke, pulse && s.pulse, className);
     return (
         <Component className={classNames} {...rest}>
             {formattedQuantity}
