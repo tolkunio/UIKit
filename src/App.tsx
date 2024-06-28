@@ -5,7 +5,7 @@ import btnStyle from './components/ui/button/Button.module.scss';
 function App() {
     return (
         <div className={s.app}>
-            <Button variant={'primary'} buttonSize={'m'}>Что сделать
+            <Button variant={'primary'} buttonSize={'m'}>Скажи
                 <Counter className={btnStyle.counter} quantity={3}  variant={'primary'} size={'m'}/></Button>
         </div>
     );

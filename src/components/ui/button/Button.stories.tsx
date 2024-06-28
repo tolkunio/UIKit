@@ -61,3 +61,14 @@ export const SecondaryWithCounter: Story = {
         variant: 'secondary',
     },
 }
+export const PrimaryButtonWithCounterFullText: Story = {
+    args: {
+        children: (
+            <>
+                Скажи как мне быть, если нет стимула
+                <Counter quantity={3} variant={'primary'} size={'m'}/>
+            </>
+        ),
+        variant: 'secondary',
+    },
+}
