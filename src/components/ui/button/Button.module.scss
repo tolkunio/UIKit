@@ -31,11 +31,15 @@
   }
 
   &:active {
-    background-color: #ff9233;
+
   }
 
   &:disabled {
     background-color: #ffcea3;
+  }
+
+  &:focus {
+    background-color: #ff9233;
   }
 
   &:focus-visible {
@@ -92,5 +96,10 @@
 
 .counter {
   color: #FFFFFF;
-  background-color: rgba(#FFFFFF, 0.12);
+  background-color:rgba(#FF7700,0.12);
+}
+
+.loader {
+  width: 131px;
+  height: 48px;
 }
