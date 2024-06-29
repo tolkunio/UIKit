@@ -8,7 +8,7 @@ export type CounterProps<T extends ElementType = 'div'> = {
     as?: T,
     quantity: string | number;
     className?: string,
-    variant: 'primary' | 'secondary',
+    variant?: 'primary' | 'secondary',
     size: CounterSize,
     stroke?: boolean,
     pulse?: boolean

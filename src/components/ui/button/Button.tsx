@@ -2,7 +2,7 @@ import s from './Button.module.scss'
 import {ElementType, ReactNode} from "react";
 import {clsx} from "clsx";
 
-export type ButtonSize = 's' | 'm' | 'l'  //28 36 56
+export type ButtonSize = 's' | 'm' | 'l' ;
 export type ButtonProps<T extends ElementType = 'button'> = {
     as?: T,
     children?: ReactNode,
